@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação sobre Arrays em JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div>
+
+        <h1>Arrays em JavaScript</h1>
+
+        <p>Um array em JavaScript é uma estrutura de dados que armazena uma coleção de elementos. Esses elementos podem
+            ser de qualquer tipo, como números, strings, objetos, ou até mesmo outros arrays. Os arrays em JavaScript
+            são indexados, o que significa que cada elemento tem uma posição numérica associada a ele, começando do
+            índice 0.</p>
+
+        <h2>Criando Arrays:</h2>
+
+        <pre><code>// Array vazio
+let meuArrayVazio = [];
+
+// Array com elementos
+let frutas = ['Maçã', 'Banana', 'Morango'];
+
+// Array misto
+let arrayMisto = [1, 'Hello', true, { chave: 'valor' }];</code></pre>
+
+        <h2>Acessando Elementos:</h2>
+
+        <p>Os elementos de um array podem ser acessados usando seus índices:</p>
+
+        <pre><code>let frutas = ['Maçã', 'Banana', 'Morango'];
+console.log(frutas[0]);  // Saída: Maçã
+console.log(frutas[1]);  // Saída: Banana
+console.log(frutas[2]);  // Saída: Morango</code></pre>
+
+        <h2>Métodos de Array:</h2>
+
+        <p>JavaScript fornece diversos métodos integrados para manipular arrays. Alguns dos métodos mais comuns incluem:
+        </p>
+
+        <ul>
+            <li><code>push()</code>: Adiciona elementos ao final do array.</li>
+            <li><code>pop()</code>: Remove o último elemento do array.</li>
+            <li><code>shift()</code>: Remove o primeiro elemento do array.</li>
+            <li><code>unshift()</code>: Adiciona elementos ao início do array.</li>
+            <li><code>length</code>: Propriedade que retorna o número de elementos no array.</li>
+            <li><code>indexOf()</code>: Retorna o índice do primeiro elemento encontrado no array.</li>
+            <li><code>splice()</code>: Altera o conteúdo de um array, adicionando ou removendo elementos em posições
+                específicas.</li>
+        </ul>
+
+        <h2>Exercícios:</h2>
+
+        <ol>
+            <li>
+                <h3>Array de Números:</h3>
+                <p>Crie um array de números e exiba-o no console.</p>
+            </li>
+
+            <li>
+                <h3>Manipulação de Array:</h3>
+                <p>Adicione um novo número ao final do array criado no exercício anterior usando o método
+                    <code>push()</code>.</p>
+            </li>
+
+            <li>
+                <h3>Array de Nomes:</h3>
+                <p>Crie um array de nomes de pessoas e exiba-o no console.</p>
+            </li>
+
+            <li>
+                <h3>Acesso a Elementos:</h3>
+                <p>Acesse o segundo nome do array de nomes e exiba no console.</p>
+            </li>
+
+            <li>
+                <h3>Remoção de Elementos:</h3>
+                <p>Remova o último nome do array de nomes usando o método <code>pop()</code>.</p>
+            </li>
+
+            <li>
+                <h3>Array de Frutas:</h3>
+                <p>Crie um array de frutas e, em seguida, adicione duas frutas no início do array usando o método
+                    <code>unshift()</code>.</p>
+            </li>
+
+            <li>
+                <h3>Localização de Elementos:</h3>
+                <p>Encontre o índice da fruta "Banana" no array de frutas usando o método <code>indexOf()</code>.</p>
+            </li>
+        </ol>
+
+        <p>Estes exercícios proporcionarão uma boa prática na criação e manipulação de arrays em JavaScript. Experimente
+            criar arrays com diferentes tipos de dados e realizar operações para se familiarizar com os conceitos.</p>
+        <p><a href="../index.html">Voltar</a></p>
+    </div>
+
+</body>
+
+</html>

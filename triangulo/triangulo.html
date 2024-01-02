@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classificação de Triângulo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Classificação de Triângulo</h1>
+
+    <form id="trianguloForm">
+      <label for="lado1">Digite o comprimento do lado 1:</label>
+      <input type="text" id="lado1" name="lado1" required>
+
+      <label for="lado2">Digite o comprimento do lado 2:</label>
+      <input type="text" id="lado2" name="lado2" required>
+
+      <label for="lado3">Digite o comprimento do lado 3:</label>
+      <input type="text" id="lado3" name="lado3" required>
+
+      <button type="button" onclick="classificarTriangulo()">Classificar Triângulo</button>
+    </form>
+
+    <div id="resultado" class="resultado"></div>
+
+    <p><a href="../index.html">Voltar</a></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

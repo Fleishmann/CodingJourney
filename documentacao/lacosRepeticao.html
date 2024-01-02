@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação sobre Laços de Repetição</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div style="max-width: 800px; margin: auto;">
+
+        <h1>Explicação sobre Laços de Repetição</h1>
+
+        <p>Laços de repetição, também conhecidos como loops, são estruturas fundamentais na programação que permitem
+            executar um bloco de código várias vezes. Eles ajudam a simplificar tarefas repetitivas e economizar tempo,
+            eliminando a necessidade de escrever o mesmo código várias vezes. Existem dois tipos principais de loops em
+            programação: o <code>for</code> e o <code>while</code>.</p>
+
+        <h2>1. For Loop:</h2>
+        <pre><code>for (inicialização; condição; incremento/decremento) {
+  // Código a ser repetido
+}</code></pre>
+        <ul>
+            <li><strong>Inicialização:</strong> Uma expressão que é executada uma vez no início do loop.</li>
+            <li><strong>Condição:</strong> Uma expressão avaliada antes de cada iteração. Se for verdadeira, o loop
+                continua; se for falsa, o loop é encerrado.</li>
+            <li><strong>Incremento/Decremento:</strong> Uma expressão executada no final de cada iteração, geralmente
+                usada para atualizar um contador.</li>
+        </ul>
+        <p><strong>Exemplo:</strong></p>
+        <pre><code>for (let i = 0; i &lt; 5; i++) {
+  console.log(i);
+}</code></pre>
+        <p>Este loop imprimirá os números de 0 a 4.</p>
+
+        <h2>2. While Loop:</h2>
+        <pre><code>while (condição) {
+  // Código a ser repetido
+  // Atualização da condição para evitar loops infinitos
+}</code></pre>
+        <ul>
+            <li><strong>Condição:</strong> Avaliada antes de cada iteração. Se for verdadeira, o loop continua; se for
+                falsa, o loop é encerrado.</li>
+        </ul>
+        <p><strong>Exemplo:</strong></p>
+        <pre><code>let i = 0;
+while (i &lt; 5) {
+  console.log(i);
+  i++;
+}</code></pre>
+        <p>Este loop também imprimirá os números de 0 a 4.</p>
+
+        <h2>Exercícios Simples:</h2>
+
+        <ol>
+            <li><strong>For Loop - Contagem:</strong>
+                <p>Use um <code>for</code> loop para imprimir os números de 1 a 10.</p>
+            </li>
+
+            <li><strong>While Loop - Contagem Regressiva:</strong>
+                <p>Use um <code>while</code> loop para imprimir os números de 10 a 1.</p>
+            </li>
+
+            <li><strong>For Loop - Soma:</strong>
+                <p>Use um <code>for</code> loop para calcular a soma dos números de 1 a 5.</p>
+            </li>
+
+            <li><strong>While Loop - Produto:</strong>
+                <p>Use um <code>while</code> loop para calcular o produto dos números de 1 a 5.</p>
+            </li>
+
+            <li><strong>For Loop - Tabuada:</strong>
+                <p>Use um <code>for</code> loop para imprimir a tabuada do 5 (de 1 a 10).</p>
+            </li>
+        </ol>
+        <p><a href="../index.html">Voltar</a></p>
+    </div>
+
+</body>
+
+</html>

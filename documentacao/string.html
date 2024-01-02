@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação sobre Strings em Programação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div>
+
+        <h1>Strings em Programação</h1>
+
+        <p>Uma string é uma sequência de caracteres. Em muitas linguagens de programação, incluindo JavaScript, as
+            strings são usadas para representar texto. Em JavaScript, você pode criar strings usando aspas simples
+            (<code>'</code>) ou aspas duplas (<code>"</code>). Por exemplo:</p>
+
+        <pre><code>let saudacao = 'Olá, mundo!';
+let nome = "Alice";</code></pre>
+
+        <h2>Operações com Strings:</h2>
+
+        <h3>1. Concatenação:</h3>
+        <pre><code>let nome = 'João';
+let sobrenome = 'Silva';
+let nomeCompleto = nome + ' ' + sobrenome;</code></pre>
+
+        <h3>2. Comprimento da String:</h3>
+        <pre><code>let mensagem = 'Bom dia!';
+let tamanho = mensagem.length; // Retorna 9</code></pre>
+
+        <h3>3. Acesso a Caracteres:</h3>
+        <pre><code>let palavra = 'JavaScript';
+let primeiroCaractere = palavra[0]; // Retorna 'J'</code></pre>
+
+        <h3>4. Métodos de String:</h3>
+        <p>JavaScript fornece vários métodos embutidos para manipulação de strings, como <code>toUpperCase()</code>,
+            <code>toLowerCase()</code>, <code>indexOf()</code>, <code>substring()</code>, entre outros.</p>
+
+        <h2>Exercícios:</h2>
+
+        <ol>
+            <li>
+                <h3>Concatenação:</h3>
+                <p>Crie duas variáveis para armazenar seu primeiro nome e sobrenome. Concatene-as para formar seu nome
+                    completo e exiba no console.</p>
+            </li>
+
+            <li>
+                <h3>Comprimento da String:</h3>
+                <p>Crie uma variável para armazenar uma palavra. Calcule e exiba o comprimento da palavra no console.
+                </p>
+            </li>
+
+            <li>
+                <h3>Acesso a Caracteres:</h3>
+                <p>Crie uma variável para armazenar uma frase. Acesse e exiba o terceiro caractere da frase no console.
+                </p>
+            </li>
+
+            <li>
+                <h3>Métodos de String:</h3>
+                <p>Crie uma variável para armazenar uma palavra em minúsculas. Use o método <code>toUpperCase()</code>
+                    para converter a palavra para maiúsculas e exiba no console.</p>
+            </li>
+
+            <li>
+                <h3>Substituição de Caracteres:</h3>
+                <p>Crie uma variável para armazenar uma frase. Use o método <code>replace()</code> para substituir uma
+                    palavra na frase e exiba no console.</p>
+            </li>
+        </ol>
+
+        <h2>O outro meio de concatenação: Template Literals</h2>
+
+        <p>O outro meio de concatenação que você está se referindo é chamado de <strong>Template Literals</strong> ou
+            <strong>Template Strings</strong> em JavaScript. Em vez de usar aspas simples (<code>'</code>) ou duplas
+            (<code>"</code>) para criar strings, você usa crases (<code>`</code>) para criar template literals. Os
+            template literals permitem incorporar expressões diretamente em uma string, tornando a concatenação mais
+            fácil e legível.</p>
+
+        <h3>Exemplo de Template Literals:</h3>
+
+        <pre><code>let nome = 'Alice';
+let idade = 25;
+
+// Usando template literals para concatenar variáveis em uma string
+let mensagem = `Olá, meu nome é ${nome} e eu tenho ${idade} anos.`;
+
+console.log(mensagem);</code></pre>
+
+        <p>Neste exemplo:</p>
+
+        <ul>
+            <li>As crases (<code>`</code>) são usadas para criar o template literal.</li>
+            <li><code>${nome}</code> e <code>${idade}</code> são espaços reservados que serão substituídos pelos valores
+                das variáveis <code>nome</code> e <code>idade</code> durante a execução.</li>
+        </ul>
+
+        <h3>Benefícios dos Template Literals:</h3>
+
+        <ol>
+            <li><strong>Incorporação de Expressões:</strong> Você pode incorporar expressões JavaScript diretamente em
+                uma string usando <code>${}</code>.</li>
+            <li><strong>Melhor Legibilidade:</strong> Torna o código mais legível, especialmente quando você precisa
+                concatenar várias variáveis ou expressões em uma string.</li>
+            <li><strong>Quebra de Linha:</strong> Template literals podem ser divididos em várias linhas, facilitando a
+                formatação de strings longas.</li>
+        </ol>
+
+        <h3>Exemplo de Quebra de Linha:</h3>
+
+        <pre><code>let mensagemMultilinha = `
+  Olá, ${nome}!
+  Bem-vindo à nossa aplicação.
+  Hoje é um ótimo dia!
+`;
+
+console.log(mensagemMultilinha);</code></pre>
+
+        <p>Os template literals são uma adição poderosa à linguagem JavaScript e oferecem uma maneira mais expressiva e
+            conveniente de criar strings, especialmente quando você precisa incorporar variáveis e expressões em suas
+            mensagens.</p>
+        <p><a href="../index.html">Voltar</a></p>
+    </div>
+
+</body>
+
+</html>

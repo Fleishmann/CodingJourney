@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Trabalhos</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .categoria {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .categoria h2 {
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px;
+            margin: 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .categoria h2:hover {
+            background-color: #2980b9;
+        }
+
+        .trabalhos {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .trabalho {
+            text-align: left;
+            margin-top: 10px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f7f7f7;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .trabalho a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .trabalho a:hover {
+            color: #2980b9;
+        }
+
+        .trabalho p {
+            margin: 8px 0;
+            color: #333;
+        }
+
+        .trabalho span {
+            display: block;
+            color: #777;
+        }
+
+        .trabalhos-expandidos {
+            max-height: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Buscador de Trabalhos</h1>
+
+        <!-- Categoria Documentação -->
+        <div class="categoria" onclick="toggleTrabalhos('documentacao')">
+            <h2>Documentação</h2>
+            <div id="documentacao" class="trabalhos">
+                <div class="trabalho">
+                    <p>Título: <a href="documentacao/ifElse.html">If e Else</a></p>
+                    <span>Descrição: Este documento aborda os conceitos fundamentais de estruturas condicionais em
+                        programação,
+                        especificamente o uso de if e else. Explore casos de uso e exemplos práticos para entender como
+                        tomar decisões em seu código.</span>
+                </div>
+                <div class="trabalho">
+                    <p>Título: <a href="documentacao/lacosRepeticao.html">Laços de Repetição</a></p>
+                    <span>Descrição: Este documento explora a utilização de laços de repetição em programação,
+                        destacando as
+                        estruturas for e while. Com exemplos simples e exercícios, você aprenderá a simplificar tarefas
+                        repetitivas.</span>
+                </div>
+                <div class="trabalho">
+                    <p>Título: <a href="documentacao/string.html">Como manipular Strigs</a></p>
+                    <span>Descrição: Descubra técnicas essenciais para manipular strings em JavaScript. Este documento
+                        cobre
+                        operações básicas, métodos de string e fornece exercícios práticos para aprimorar suas
+                        habilidades na manipulação de texto.</span>
+                </div>
+                <div class="trabalho">
+                    <p>Título: <a href="documentacao/array.html">Como manipular Array</a></p>
+                    <span>Descrição: Aprofunde-se no mundo dos arrays em JavaScript com este documento. Saiba como
+                        criar, acessar e
+                        manipular arrays, além de explorar métodos integrados. Exercícios práticos proporcionam a
+                        oportunidade de consolidar o conhecimento adquirido.</span>
+                </div>
+                <!-- Adicione mais trabalhos de documentacao conforme necessário -->
+            </div>
+        </div>
+
+        <!-- Categoria Matemática -->
+        <div class="categoria" onclick="toggleTrabalhos('matematica')">
+            <h2>Matemática</h2>
+            <div id="matematica" class="trabalhos">
+                <div class="trabalho">
+                    <p>Título: <a href="anobissexto/anoBissexto.html">Ano Bissexto</a></p>
+                    <span>Descrição: Este projeto oferece uma ferramenta simples para verificar se um ano é bissexto ou
+                        não. Um ano bissexto ocorre a cada quatro anos, exceto anos múltiplos de 100, a menos que sejam
+                        divisíveis por 400. A verificação é feita de maneira eficiente, fornecendo ao usuário uma
+                        resposta clara sobre a natureza bissexto ou não do ano inserido.</span>
+                </div>
+                <div class="trabalho">
+                    <p>Título: <a href="triangulo/triangulo.html">Triangulo</a></p>
+                    <span>Descrição: Este projeto aborda conceitos matemáticos relacionados a triângulos. O usuário pode
+                        inserir os comprimentos dos lados de um triângulo e o sistema classificará o triângulo como
+                        equilátero, isósceles ou escaleno. Além disso, o projeto valida se os comprimentos fornecidos
+                        realmente formam um triângulo, fornecendo uma resposta abrangente.</span>
+                </div>
+                <div class="trabalho">
+                    <p>Título: <a href="conceito/conceito.html">Conceito</a></p>
+                    <span>Descrição: Este projeto oferece uma utilidade para converter notas em conceitos. O usuário
+                        insere uma nota em uma escala de 0 a 100, e o sistema retorna o conceito correspondente. O
+                        sistema utiliza uma escala padrão, classificando as notas de A a F. O projeto também inclui
+                        validação para garantir que a nota inserida esteja dentro da faixa válida.</span>
+                </div>
+                <!-- Adicione mais trabalhos de matemática conforme necessário -->
+            </div>
+        </div>
+
+        <!-- Categoria String -->
+        <div class="categoria" onclick="toggleTrabalhos('string')">
+            <h2>String</h2>
+            <div id="string" class="trabalhos">
+                <div class="trabalho">
+                    <p>Mais trabalhos nesta categoria serão implementados em breve. Fique atento!</p>
+                </div>
+                <!-- Adicione mais trabalhos de string conforme necessário -->
+            </div>
+        </div>
+
+        <!-- Categoria Array -->
+        <div class="categoria" onclick="toggleTrabalhos('array')">
+            <h2>Array</h2>
+            <div id="array" class="trabalhos">
+                <div class="trabalho">
+                    <p>Mais trabalhos nesta categoria serão implementados em breve. Fique atento!</p>
+                </div>
+                <!-- Adicione mais trabalhos de array conforme necessário -->
+            </div>
+
+        </div>
+
+        <script>
+            function toggleTrabalhos(categoria) {
+                const trabalhos = document.getElementById(categoria);
+                trabalhos.classList.toggle('trabalhos-expandidos');
+            }
+        </script>
+</body>
+
+</html>
